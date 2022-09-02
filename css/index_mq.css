@@ -40,19 +40,6 @@
     height: 140px;
     line-height: 140px;
   }
- /*  .chart_wrap{
-    width: 100%;
-    gap: 20px;
-  }
-  .chart{
-    width: 120px;
-    height: 120px;
-  }
-  span.center{
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-  } */
   .contact{
     width: 60%;
   }
@@ -249,9 +236,6 @@
   .about_inner aside{
     flex: 1 500px;
   }
-  .about_img {
-    flex: 1 300px;
-  }
   .about_inner aside ul{
     margin-top: 75px;
   }
@@ -282,10 +266,10 @@
 }
 @media screen and (max-width: 850px){
   header .main{
-    flex-flow: column-reverse;
+    flex-flow: column;
   }
   header .main img{
-    top: 0;
+    top: -80px;
     left: 50%;
     transform: translate(-50%);
     width: 250px;
@@ -301,6 +285,9 @@
   .contents1_inner{
     width: 90%;
   }
+  .aboutImg img{
+    width: 200px;
+  }
   .about_inner aside li{
     margin: 0;
     padding-left: 30px;
@@ -311,13 +298,12 @@
   .about_inner aside li p{
     font-size: 0.9em;
   }
-  .about_inner > img{
-    width: 100px;
-    margin-top: -20px;
-  }
   .about_inner aside{
     width: 100%;
     margin-top: 50px;
+  }
+  .about_inner aside a{
+    font-size: 0.9em;
   }
   .front p{
     font-size: 1.2em;
@@ -333,10 +319,12 @@
   .contents_title{
     font-size: 3em;
   }
-  .about_inner > img{
+  .aboutImg{
     position: absolute;
     top: 10%;
-    right: 20px;
+    right: 10px;
+  }
+  .aboutImg img{
     width: 150px;
   }
   .contact .back .title{
@@ -365,16 +353,8 @@
   .about_inner{
     flex-flow: column;
   }
-  .about_img{
-    width: 180px;
-    background-size: cover;
-    position: relative;
-    left: 120px;
-    top: 40px;
-  }
   .about_inner aside{
     width: 100%;
-    margin-top: -150px;
   }
   .chart_wrap{
     margin-top: 30px;
@@ -391,5 +371,9 @@
   }
   .tab_btn li a{
     font-size: 1.4em;
+  }
+  .mo_p_tab_cont > div ul{
+    width: 90%;
+    margin: 30px auto;
   }
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.title-ani-box {
+  border-radius: 5px;
+  /* position: absolute !important; */
+ /*  width: 100px; */
+  /* top: 60%;
+  left: calc(50% + 128px); */
+  /*margin: 95px 124px;*/
+ /*  transform: translate(-50%, -50%); */
+  /* z-index: -1 !important; */
+}
+
+.title-ani-box .wave {
+  position: absolute !important;
+  /* top: 3%; */
+  /* left: 50%; */
+  background: #575757;
+  width: 400px;
+  height: 400px;
+  /* margin-left: -400px;
+  margin-top: -400px;
+  */
+  border-radius: 40%;
+  transform-origin: 50% 52%; 
+}
+.title-ani-box .wave.-one {
+  animation: drift 6000ms infinite linear;
+  opacity: 0.25;
+  background: rgb(91, 161, 170);
+}
+.title-ani-box .wave.-two {
+  animation: drift 10000ms infinite linear;
+  opacity: 0.25;
+  background: rgb(120, 223, 120);
+}
+.title-ani-box .wave.-three {
+  animation: drift 8000ms infinite linear;
+  opacity: 0.25;
+  background: pink;
+}
+@keyframes drift {
+  from {
+     transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+  <div class="title-ani-box">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+  </div>
+</html>
+
+
